@@ -17,6 +17,7 @@ def game_start
     end
 
   elsif game_mode == "2"
+    puts "Would you like to go first? (y/n)"
     Game.new(Players::Human.new("X"), Players::Human.new("O"), Board.new).play
 
   elsif game_mode == "0"
