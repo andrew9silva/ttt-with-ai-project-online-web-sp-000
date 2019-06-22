@@ -83,7 +83,7 @@ class Game
    end
   end
 
-  def game_start
+  def self.game_start
     puts "Let's play Tic Tac Toe!"
     puts "What type of game are you playing: 0 player, 1 player, or 2 player?"
 
