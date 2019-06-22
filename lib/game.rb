@@ -115,7 +115,7 @@ class Game
    else
     turn
    end
-   Board.display
+   @board.display
   end
 
   def play
