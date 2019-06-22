@@ -92,17 +92,17 @@ class Game
     if game_mode == "1"
       puts "Would you like to go first? (y/n)"
       if gets.strip == "y"
-        Game.new(Players::Human.new("X"), Players::Computer.new("O"), Board.new).play
+        (Players::Human.new("X"), Players::Computer.new("O"), Board.new).play
       else
-        Game.new(Players::Computer.new("X"), Players::Human.new("O"), Board.new).play
+        (Players::Computer.new("X"), Players::Human.new("O"), Board.new).play
       end
 
     elsif game_mode == "2"
       puts "Would you like to go first? (y/n)"
-      Game.new(Players::Human.new("X"), Players::Human.new("O"), Board.new).play
+      (Players::Human.new("X"), Players::Human.new("O"), Board.new).play
 
     elsif game_mode == "0"
-      Game.new(Players::Computer.new("X"), Players::Computer.new("O"), Board.new).play
+      (Players::Computer.new("X"), Players::Computer.new("O"), Board.new).play
     end
     puts "Do you want to play again? (y/n)"
   end
